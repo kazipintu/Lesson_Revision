@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Practice</title>
+</head>
+<body>
+  
+  <h2> HTML Form Practice </h2>
+
+  <form method="get" action="#" target="" autocomplete="on" oninput="out.value=parseInt(x.value)+parseInt(y.value)">
+
+    <fieldset>
+      <legend>Login Credentials</legend>
+        <!-- Input type "text"-->
+        <label for="nm">Name:</label>
+        <input type="text" id="nm" name="name" placeholder="name" value="Tony Stark" readonly required>
+        <br><br>
+
+        <!-- Input type "email"-->
+        <label for="mail">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email" disabled size="50" required>
+    </fieldset>
+    <hr>
+
+    <!-- Input type "password"-->
+    <input type="password" id="password" placeholder="password" name="password">
+    <hr>
+
+    <!-- Input type "radio"-->
+    <label>Select your gender</label><br>
+    <input type="radio" id="rm" name="gender" value="male"><label>Male</label>
+    <input type="radio" id="rf" name="gender" value="female">Female
+    <input type="radio" id="ro" name="gender" value="female">Other
+    <hr>
+
+    <!-- Input type "checkbox"-->
+    <label> Select your favourite alphabets </label><br>
+    <input type="checkbox" id="chkbox1" name="student1" value="alif">Alif
+    <input type="checkbox" id="chkbox2" name="student2" value="baa">Baa
+    <input type="checkbox" id="chkbox3" name="student3" value="taa">Taa
+    <input type="checkbox" id="chkbox4" name="student4" value="tha">Tha
+    <hr>
+
+    <!-- Input type "textarea"-->
+    <label> Input your message </label> <br><br>
+    <textarea name="message" rows="5" cols="50"></textarea>
+    <hr>
+
+    <!-- Input type "button"-->
+    <input type="button" name="button" value="dummy submit">
+
+    <!-- input type "range", output tag-->
+    0 <input type="range" id="x" name="x" value="50"> 100
+    +
+    0 <input type="range" id="y" name="y" value="50"> 100
+    =
+    <output name="out" for="x y"></output>
+    <hr>
+
+    <!-- Input type "color"-->
+    <label> Select a color </label>
+    <input type="color" id="color" name="color">
+    <hr>
+
+    <!-- Input type "date"-->
+    <label> Select your date of birth </label>
+    <input type="date" id="date" name="date" max="2024-01-27" min="1995-12-31">
+    <hr>
+
+    <!-- Input type "datetime-local"-->
+    <label> Select your date:time of birth </label>
+    <input type="datetime-local" id="datetime-local" name="datetime-local">
+    <hr>
+
+    <!-- Input type "month"-->
+    <label> Select your month of birth </label>
+    <input type="month" id="month" name="month">
+    <hr>
+
+    <!-- Input type "time"-->
+    <label> Select time </label>
+    <input type="time" id="time" name="time">
+    <hr>
+
+    <!-- Input type "week"-->
+    <label> Select week </label>
+    <input type="week" id="week" name="week">
+    <hr>
+
+    <!-- Input type "file"-->
+    <label> Choose a file </label>
+    <input type="file" id="file" name="file" multiple>
+    <hr>
+
+    <!-- select option-->
+    <label> Choose your city </label>
+      <select id="city" name="city">
+        <option value="Kolkata">Kolkata</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bangalore">B'lore</option>
+        <option value="Chennai">Chennai</option>
+      </select>
+    <hr>
+
+    <!-- datalist tag-->
+    <input list="browser">
+      <datalist id="browser">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Edge">
+        <option value="Safari">
+      </datalist>
+    <hr>
+    
+    <!-- button tag-->
+    <button type="button" onclick="alert('Hello World')"> Show Msg</button>
+    <hr>
+
+    <!-- Input type "submit"-->
+    <input type="submit" id="submit" name="submit" value="SAVE">
+    <hr>
+
+    <iframe width="280" height="180" src="https://www.youtube.com/embed/EsnLehAGkxM" title="Ja Pakhi Ure Ja Na - Subhamita | Lyrical Video | Subhamita | New Bengali Lyrical Song 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </form>
+
+</body>
+</html>
